@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
   await esbuild.build({
     entryPoints: ['src/index.ts'],
     bundle: true,
-    globalName: 'JBrowsePluginMafViewer',
+    globalName: 'JBrowsePluginXenBase',
     sourcemap: true,
     outfile: 'dist/jbrowse-plugin-xenbase.umd.production.min.js',
     metafile: true,
@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
   let ctx = await esbuild.context({
     entryPoints: ['src/index.ts'],
     bundle: true,
-    globalName: 'JBrowsePluginMafViewer',
+    globalName: 'JBrowsePluginXenBase',
     sourcemap: true,
     outfile: 'dist/out.js',
     metafile: true,

@@ -56,7 +56,7 @@
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "./synteny/laevL_vs_trop/xenLae10_rm.XB-2024-02.chrL.fa.fai",
+            "uri": "xenLae10_rm.XB-2024-02.chrL.fa.fai",
             "locationType": "UriLocation"
           }
         }
@@ -82,9 +82,16 @@
     },
     {
       "name": "HG38",
+      "refNameAliases": {
+        "adapter": {
+          "type": "RefNameAliasAdapter",
+          "uri": "hg38_aliases.txt"
+        }
+      },
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "HG38-ReferenceSequenceTrack",
+
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
@@ -92,7 +99,7 @@
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "./synteny/lastz_sets/Human_XTR_PAF/hg38_genomic_chr_sorted2.fa.gz.fai",
+            "uri": "hg38_genomic_chr_sorted2.fa.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
@@ -114,7 +121,7 @@
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "./synteny/Chr_Synteny/XLA.S-XTR/Chr_xenLae10_rm.XB-2024-02.chrS.fa.gz.fai",
+            "uri": "Chr_xenLae10_rm.XB-2024-02.chrS.fa.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
@@ -255,20 +262,10 @@
       "name": "Xenopus laevis 10.17-UCB (all transcripts)",
       "adapter": {
         "type": "Gff3TabixAdapter",
-        "gffGzLocation": {
-          "uri": "../XenJBrowse/gene_models/xl10_1/Xlaevisv10.17.sorted.gff3.gz",
-          "locationType": "UriLocation"
-        },
-        "index": {
-          "location": {
-            "uri": "../XenJBrowse/gene_models/xl10_1/Xlaevisv10.17.sorted.gff3.gz.tbi",
-            "locationType": "UriLocation"
-          },
-          "indexType": "TBI"
-        }
+        "uri": "Xlaevisv10.17.sorted.gff3.gz"
       },
       "category": ["Gene models"],
-      "assemblyNames": ["XL10.1"]
+      "assemblyNames": ["XL10.1_S", "XL10.1_L", "XL10.1"]
     },
     {
       "type": "FeatureTrack",
@@ -280,17 +277,7 @@
       "name": "Xenopus tropicalis 10.0-Xenbase (longest)",
       "adapter": {
         "type": "Gff3TabixAdapter",
-        "gffGzLocation": {
-          "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz",
-          "locationType": "UriLocation"
-        },
-        "index": {
-          "location": {
-            "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz.tbi",
-            "locationType": "UriLocation"
-          },
-          "indexType": "TBI"
-        }
+        "uri": "XENTR_10.0_Xenbase_longest.gff3.gz"
       },
       "category": ["Gene models"],
       "assemblyNames": ["XT10.0"]
@@ -999,17 +986,7 @@
       "name": "Human primary transcripts (hg38)",
       "adapter": {
         "type": "Gff3TabixAdapter",
-        "gffGzLocation": {
-          "uri": "synteny/lastz_sets/Human_XTR_PAF/hg38_GCF_CHRs_primTr.gff3.gz",
-          "locationType": "UriLocation"
-        },
-        "index": {
-          "location": {
-            "uri": "synteny/lastz_sets/Human_XTR_PAF/hg38_GCF_CHRs_primTr.gff3.gz.tbi",
-            "locationType": "UriLocation"
-          },
-          "indexType": "TBI"
-        }
+        "uri": "hg38_GCF_CHRs_primTr.gff3.gz"
       },
       "assemblyNames": ["HG38"]
     },
@@ -1024,17 +1001,7 @@
       "name": "Xenopus laevis 10.1-Xenbase",
       "adapter": {
         "type": "Gff3TabixAdapter",
-        "gffGzLocation": {
-          "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_sorted.gff3.gz",
-          "locationType": "UriLocation"
-        },
-        "index": {
-          "location": {
-            "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_sorted.gff3.gz.tbi",
-            "locationType": "UriLocation"
-          },
-          "indexType": "TBI"
-        }
+        "uri": "XENLA_10.1_Xenbase_sorted.gff3.gz"
       },
       "assemblyNames": ["XL10.1"]
     },
@@ -1096,6 +1063,12 @@
   ],
   "plugins": [
     {
+      "name": "XenBase",
+      "umdLoc": {
+        "uri": "http://localhost:9000/dist/out.js"
+      }
+    },
+    {
       "name": "DbxrefPlugin",
       "umdLoc": {
         "uri": "dbxrefPlugin.js"
@@ -1104,212 +1077,6 @@
     {
       "name": "MafViewer",
       "url": "https://unpkg.com/jbrowse-plugin-mafviewer/dist/jbrowse-plugin-mafviewer.umd.production.min.js"
-    }
-  ],
-  "aggregateTextSearchAdapters": [
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "X. laevis 10.1 GCF (NCBI)-index",
-      "ixFilePath": {
-        "uri": "trix/X. laevis 10.1 GCF (NCBI).ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/X. laevis 10.1 GCF (NCBI).ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/X. laevis 10.1 GCF (NCBI)_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL10.1"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "X. tropicalis 10.0 GCF (NCBI)-index",
-      "ixFilePath": {
-        "uri": "trix/X. tropicalis 10.0 GCF (NCBI).ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/X. tropicalis 10.0 GCF (NCBI).ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/X. tropicalis 10.0 GCF (NCBI)_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XT10.0"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XT10.0-index",
-      "ixFilePath": {
-        "uri": "trix/XT10.0.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XT10.0.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XT10.0_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XT10.0"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL10.1-index",
-      "ixFilePath": {
-        "uri": "trix/XL10.1.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL10.1.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL10.1_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL10.1"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL10.1_L-index",
-      "ixFilePath": {
-        "uri": "trix/XL10.1_L.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL10.1_L.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL10.1_L_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL10.1_L"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XT10.0_masked-index",
-      "ixFilePath": {
-        "uri": "trix/XT10.0_masked.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XT10.0_masked.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XT10.0_masked_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XT10.0_masked"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "HG38-index",
-      "ixFilePath": {
-        "uri": "trix/HG38.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/HG38.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/HG38_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["HG38"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL10.1_S-index",
-      "ixFilePath": {
-        "uri": "trix/XL10.1_S.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL10.1_S.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL10.1_S_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL10.1_S"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL9.1_L-index",
-      "ixFilePath": {
-        "uri": "trix/XL9.1_L.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL9.1_L.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL9.1_L_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL9.1_L"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL9.2_L-index",
-      "ixFilePath": {
-        "uri": "trix/XL9.2_L.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL9.2_L.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL9.2_L_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL9.2_L"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL9.1_S-index",
-      "ixFilePath": {
-        "uri": "trix/XL9.1_S.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL9.1_S.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL9.1_S_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL9.1_S"]
-    },
-    {
-      "type": "TrixTextSearchAdapter",
-      "textSearchAdapterId": "XL9.2_S-index",
-      "ixFilePath": {
-        "uri": "trix/XL9.2_S.ix",
-        "locationType": "UriLocation"
-      },
-      "ixxFilePath": {
-        "uri": "trix/XL9.2_S.ixx",
-        "locationType": "UriLocation"
-      },
-      "metaFilePath": {
-        "uri": "trix/XL9.2_S_meta.json",
-        "locationType": "UriLocation"
-      },
-      "assemblyNames": ["XL9.2_S"]
     }
   ],
   "defaultSession": {
