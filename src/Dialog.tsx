@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Dialog, LoadingEllipses } from '@jbrowse/core/ui'
 import {
   Autocomplete,
@@ -88,6 +88,7 @@ export default function MyDialog({
 }) {
   const [rows, setRows] = useState<Row[]>()
   const [selectedGene, setSelectedGene] = useState<string>('')
+  const [inputValue, setInputValue] = useState<string>('')
   useEffect(() => {
     ;(async () => {
       const res = await textfetch(
@@ -104,20 +105,44 @@ export default function MyDialog({
     })()
   }, [])
 
-  const vals = useMemo(() => {
+  const allOptions = useMemo(() => {
     return rows
-      ? dedupe(rows, row => row.XLAL_symbol)
-          .map(r => ({
+      ? [
+          ...dedupe(rows, row => row.XLAL_symbol)
+            .map(r => ({
+              ...r,
+              label: r.Human_ortho_symbol,
+            }))
+            .filter(f => !!f.label),
+          ...dedupe(rows, row => row.XTR_symbol).map(r => ({
             ...r,
-            label: r.Human_ortho_symbol,
-          }))
-          .filter(f => !!f.label)
+            label: r.XTR_symbol,
+          })),
+          ...dedupe(rows, row => row.XTR_symbol).map(r => ({
+            ...r,
+            label: r.XLAL_symbol,
+          })),
+          ...dedupe(rows, row => row.XTR_symbol).map(r => ({
+            ...r,
+            label: r.XLAS_symbol,
+          })),
+        ].filter(f => !!f.label)
       : []
   }, [rows])
 
+  const filteredOptions = useMemo(() => {
+    if (!inputValue || inputValue.length < 1) {
+      return allOptions.slice(0, 100)
+    }
+    const searchTerm = inputValue.toLowerCase()
+    return allOptions
+      .filter(option => option.label.toLowerCase().includes(searchTerm))
+      .slice(0, 100)
+  }, [allOptions, inputValue])
+
   const selectedValue = useMemo(() => {
-    return vals.find(v => v.label === selectedGene) || null
-  }, [vals, selectedGene])
+    return allOptions.find(v => v.label === selectedGene) || null
+  }, [allOptions, selectedGene])
   return (
     <Dialog
       onClose={handleClose}
@@ -129,14 +154,21 @@ export default function MyDialog({
         {rows ? (
           <div>
             <Typography>
-              Select a human gene symbol to create a synteny view for X. laevis,
-              X. tropicalis, and Hg38:
+              Select a gene symbol to create a synteny view for X. laevis (S and
+              L subgenomes), X. tropicalis, and Hg38:
             </Typography>
             <Autocomplete
-              options={vals}
+              options={filteredOptions}
               value={selectedValue}
+              inputValue={inputValue}
+              onInputChange={(_, newInputValue) => setInputValue(newInputValue)}
               onChange={(_, newValue) => setSelectedGene(newValue?.label || '')}
               sx={{ width: 300 }}
+              ListboxProps={{
+                style: {
+                  maxHeight: '200px',
+                },
+              }}
               renderInput={params => (
                 <TextField {...params} variant="outlined" label="Gene symbol" />
               )}
@@ -176,7 +208,13 @@ export default function MyDialog({
         )}
       </DialogContent>
       <DialogActions>
-        <Button color="secondary" variant="contained">
+        <Button
+          color="secondary"
+          variant="contained"
+          onClick={() => {
+            handleClose()
+          }}
+        >
           Cancel
         </Button>
         <Button

@@ -21,4 +21,8 @@ each "row", I just didn't have that set up
 I cloned various xenbase resources locally to make this, deploying on your
 server probably requires adding refNameAliases for hg38
 
+I had to do some hacky stuff to clone xenbase resources locally and partially
+since xenbase doens't have CORS enabled, so more integrations like synteny
+tracks are not here
+
 Hope this helps!
