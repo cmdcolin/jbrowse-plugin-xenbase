@@ -1,0 +1,1396 @@
+{
+  "assemblies": [
+    {
+      "name": "XL10.1",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL10_1_GCF_genomic_sorted-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "../XenJBrowse/scaffolds/xl10_1/XL10_1_GCF_genomic_sorted.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "XL10_1_GCF_genomic_sorted.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "../XenJBrowse/scaffolds/xl10_1/XL10_1_GCF_genomic_sorted.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XT10.0",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "GCF_XT10_0_UCB_names_sorted-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "../XenJBrowse/scaffolds/xt10_0/GCF_XT10_0_UCB_names_sorted.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "GCF_XT10_0_UCB_names_sorted.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "../XenJBrowse/scaffolds/xt10_0/GCF_XT10_0_UCB_names_sorted.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL10.1_L",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL10.1_L-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/laevL_vs_trop/xenLae10_rm.XB-2024-02.chrL.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/laevL_vs_trop/xenLae10_rm.XB-2024-02.chrL.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XT10.0_masked",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XT10.0_masked-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/laevL_vs_trop/xenTro10_rm.XB-2024-02.chr.fa",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/laevL_vs_trop/xenTro10_rm.XB-2024-02.chr.fa.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "HG38",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "HG38-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/lastz_sets/Human_XTR_PAF/hg38_genomic_chr_sorted2.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/lastz_sets/Human_XTR_PAF/hg38_genomic_chr_sorted2.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/lastz_sets/Human_XTR_PAF/hg38_genomic_chr_sorted2.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL10.1_S",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL10.1_S-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/Chr_Synteny/XLA.S-XTR/Chr_xenLae10_rm.XB-2024-02.chrS.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/Chr_Synteny/XLA.S-XTR/Chr_xenLae10_rm.XB-2024-02.chrS.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/Chr_Synteny/XLA.S-XTR/Chr_xenLae10_rm.XB-2024-02.chrS.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL9.1_L",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL9.1_L-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_Xla.v91_L.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_Xla.v91_L.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_Xla.v91_L.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL9.2_L",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL9.2_L-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_XENLA_9.2_genome_rm_L.fasta.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_XENLA_9.2_genome_rm_L.fasta.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_XENLA_9.2_genome_rm_L.fasta.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL9.1_S",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL9.1_S-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.1/Chr_Xla.v91_S.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.1/Chr_Xla.v91_S.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.1/Chr_Xla.v91_S.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "XL9.2_S",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "XL9.2_S-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.2/Chr_XENLA_9.2_genome_rm_S.fa.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.2/Chr_XENLA_9.2_genome_rm_S.fa.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "./synteny/Chr_Synteny/v9_v10/XLA.S_9.2/Chr_XENLA_9.2_genome_rm_S.fa.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {
+    "LinearGenomeViewPlugin": {
+      "trackLabels": "offset"
+    }
+  },
+  "connections": [],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "trackId": "XENTR_10.0_Xenbase_sorted.gff3",
+      "name": "Xenopus tropicalis 10.0-Xenbase",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Gene models"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Xlaevisv10.17.sorted.gff3",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 10.17-UCB (all transcripts)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/Xlaevisv10.17.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl10_1/Xlaevisv10.17.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Gene models"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_longest",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus tropicalis 10.0-Xenbase (longest)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Gene models"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_ENS",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus tropicalis 10.0-Ensembl",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_ENS_UCB_IDs_dbxrefs2.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_ENS_UCB_IDs_dbxrefs2.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Gene models"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_UCB",
+      "name": "Xenopus tropicalis 10.0-UCB (Berkeley)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/Xentr10.0.gene.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/Xentr10.0.gene.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Gene models"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_morphs",
+      "formatDetails": {
+        "feature": "jexl:{name:'<a href=http://www.xenbase.org/reagents/displayMorpholino.do?featureId='+feature.mo_id+'>'+feature.name+'</a>',dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Morpholinos",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/XL10_1_morph.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl10_1/XL10_1_morph.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Reagents"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_gRNAs",
+      "formatDetails": {
+        "feature": "jexl:{name:'<a href=http://www.xenbase.org/reagents/displayMorpholino.do?featureId='+feature.grna_id+'>'+feature.name+'</a>',dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "gRNAs",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/XL10_1_gRNA.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl10_1/XL10_1_gRNA.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Reagents"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_morphs",
+      "formatDetails": {
+        "feature": "jexl:{name:'<a href=http://www.xenbase.org/reagents/displayMorpholino.do?featureId='+feature.mo_id+'>'+feature.name+'</a>',dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Morpholinos",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_morph_fix.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_morph_fix.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Reagents"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_gRNAs",
+      "formatDetails": {
+        "feature": "jexl:{name:'<a href=http://www.xenbase.org/reagents/displayMorpholino.do?featureId='+feature.grna_id+'>'+feature.name+'</a>',dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "gRNAs",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_gRNA_fix.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XT10_0_gRNA_fix.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "category": ["Reagents"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cas9_genes_t7_prom",
+      "name": "Guide RNAs for coding regions",
+      "formatDetails": {
+        "feature": "jexl:{Scoring_method:'<a href=http://www.xenbase.org/literature/article.do?method=display&articleId=51392>Moreno-Mateos et al. 2015</a>', Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/cas9_ngg_dt7_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "XL10.1_cas9_coding-display",
+          "mouseover": "jexl:get(feature,'score')",
+          "renderer": {
+            "type": "SvgFeatureRenderer"
+          }
+        }
+      ],
+      "category": ["CRISPRscan Predictions", "Cas9 sgRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cpf1_genes_tttn_pam",
+      "name": "Guide RNAs for coding regions TTTN PAM",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/lbcpf1_tttn_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cas9_wg_sp6t7_prom",
+      "name": "Guide RNAs for whole genome",
+      "formatDetails": {
+        "feature": "jexl:{Scoring_method:'<a href=http://www.xenbase.org/literature/article.do?method=display&articleId=51392>Moreno-Mateos et al. 2015</a>', Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/cas9_ngg_dt7.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "XL10.1_cas9_wg-display",
+          "mouseover": "jexl:get(feature,'score')",
+          "renderer": {
+            "type": "SvgFeatureRenderer"
+          }
+        }
+      ],
+      "category": ["CRISPRscan Predictions", "Cas9 sgRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_subL",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 10.1-L subgenome",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "synteny/laevL_vs_trop/XENLA_10.1_Xenbase_L_subg.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "synteny/laevL_vs_trop/XENLA_10.1_Xenbase_L_subg.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL10.1_L"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cpf1_genes_tttv_pam",
+      "name": "Guide RNAs for coding regions TTTV PAM",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/lbcpf1_tttv_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cpf1_wg_tttv_pam",
+      "name": "Guide RNAs for whole genome TTTV PAM",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/lbcpf1_tttv.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_cpf1_wg_tttn_pam",
+      "name": "Guide RNAs for whole genome TTTN PAM",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xl10_1/lbcpf1_tttn.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "lastz_SYN_trop_vs_laevisL",
+      "name": "X. tropicalis 10.0 vs X. laevis_L 10.1",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/lastz_sets/XTR_XLAL_PAF/XTR_XLAL_all_chrs.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XT10.0_masked", "XL10.1_L"]
+      },
+      "assemblyNames": ["XT10.0_masked", "XL10.1_L"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cas9_genes_t7_prom",
+      "formatDetails": {
+        "feature": "jexl:{Scoring_method:'<a href=http://www.xenbase.org/literature/article.do?method=display&articleId=51392>Moreno-Mateos et al. 2015</a>', Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for coding regions",
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "XT10.0_cas9_coding-display",
+          "mouseover": "jexl:get(feature,'score')",
+          "renderer": {
+            "type": "SvgFeatureRenderer"
+          }
+        }
+      ],
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/cas9_ngg_dt7_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cas9 sgRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cas9_wg_sp6t7_prom",
+      "formatDetails": {
+        "feature": "jexl:{Scoring_method:'<a href=http://www.xenbase.org/literature/article.do?method=display&articleId=51392>Moreno-Mateos et al. 2015</a>', Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for whole genome",
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "XT10.0_cas9_wg-display",
+          "mouseover": "jexl:get(feature,'score')",
+          "renderer": {
+            "type": "SvgFeatureRenderer"
+          }
+        }
+      ],
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/cas9_ngg_dt7.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cas9 sgRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cpf1_genes_tttv_pam",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for coding regions TTTV PAM",
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/lbcpf1_tttv_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cpf1_genes_tttn_pam",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for coding regions TTTN PAM",
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/lbcpf1_tttn_all.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cpf1_wg_tttv_pam",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for whole genome TTTV PAM",
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/lbcpf1_tttv.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_cpf1_wg_tttn_pam",
+      "formatDetails": {
+        "feature": "jexl:{Sequence_analysis_tools:'<a href=https://indelphi.giffordlab.mit.edu/batch target=_blank>Indelphi</a>, <a href=http://crispor.tefor.net target=_blank>CRISPOR</a>'}"
+      },
+      "name": "Guide RNAs for whole genome TTTN PAM",
+      "adapter": {
+        "type": "BigBedAdapter",
+        "bigBedLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/CRISPR/xt10_0/lbcpf1_tttn.bb",
+          "locationType": "UriLocation"
+        }
+      },
+      "category": ["CRISPRscan Predictions", "Cpf1 cRNAs"],
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "lastz_SYN_human_vs_trop",
+      "name": "Homo sapiens hg38 vs X. tropicalis 10.0",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/lastz_sets/Human_XTR_PAF/Human_XTR_lc_CHRs.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["HG38", "XT10.0_masked"]
+      },
+      "assemblyNames": ["HG38", "XT10.0_masked"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "lastz_SYN_trop_vs_laevisS",
+      "name": "X. tropicalis 10.0 vs X. laevis_S 10.1",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/lastz_sets/XTR_XLAS_PAF/XTR_XLAS_all_chrs.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XT10.0_masked", "XL10.1_S"]
+      },
+      "assemblyNames": ["XT10.0_masked", "XL10.1_S"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_subS",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 10.1 S subgenome",
+      "adapter": {
+        "type": "Gff3Adapter",
+        "gffLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_laevS.gff3",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": ["XL10.1_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SYN_laevL_XL10.1_vs_XL9.1",
+      "name": "X. laevis 10.1 vs X. laevis 9.1 L subgenomes",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_xenLae_chrL_10_vs_9.1.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_L", "XL9.1_L"]
+      },
+      "assemblyNames": ["XL10.1_L", "XL9.1_L"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL9_1_subL",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 9.1 L subgenome",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl9_1/XL9_1_primtTr_L.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl9_1/XL9_1_primtTr_L.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL9.1_L"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL9_2_subL",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 9.2 L subgenome",
+      "adapter": {
+        "type": "Gff3Adapter",
+        "gffLocation": {
+          "uri": "../XenJBrowse/gene_models/xl9_2/XENLA_9.2_Xenbase_L.gff3",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": ["XL9.2_L"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SYN_laevL_XL10.1_vs_XL9.2",
+      "name": "X. laevis 10.1 vs X. laevis 9.2 L subgenomes",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_xenLae_chrL_10_vs_9.2.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_L", "XL9.2_L"]
+      },
+      "assemblyNames": ["XL10.1_L", "XL9.2_L"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL9_1_subS",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 9.1 S subgenome",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl9_1/XL9_1_primtTr_S.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl9_1/XL9_1_primtTr_S.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL9.1_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SYN_laevS_XL10.1_vs_XL9.1",
+      "name": "X. laevis 10.1 vs X. laevis 9.1 S subgenomes",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.S_9.1/Chr_xenLae_chrS_10_vs_9.1.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_S", "XL9.1_S"]
+      },
+      "assemblyNames": ["XL10.1_S", "XL9.1_S"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL9_2_subS",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 9.2 S subgenome",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl9_2/XENLA_9.2_Xenbase_S.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl9_2/XENLA_9.2_Xenbase_S.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL9.2_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "SYN_laevS_XL10.1_vs_XL9.2",
+      "name": "X. laevis 10.1 vs X. laevis 9.2 S subgenomes",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.S_9.2/Chr_xenLae_chrS_10_vs_9.2.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_S", "XL9.2_S"]
+      },
+      "assemblyNames": ["XL10.1_S", "XL9.2_S"]
+    },
+    {
+      "type": "MafTrack",
+      "trackId": "MAF_24frogs",
+      "category": ["Other"],
+      "name": "Multiple Species Alignment (24 frogs + 2 salamanders)",
+      "adapter": {
+        "type": "MafTabixAdapter",
+        "samples": [
+          "Ascaphus_truei",
+          "Atelopus_zeteki",
+          "Bombina_variegata",
+          "Eleutherodactylus_coqui",
+          "Engystomops_pustulosus",
+          "Hymenochirus_boettgeri",
+          "Lepidobatrachus_laevis",
+          "Leptobrachium_ailaonicum",
+          "Limnodynastes_dumerilii",
+          "Nanorana_parkeri",
+          "Oophaga_pumilio",
+          "Pelobates_cultripes",
+          "Pelophylax_lessonae",
+          "Pipa_parva",
+          "Pleurodeles_waltl",
+          "Pyxicephalus_adspersus",
+          "Rana_catesbeiana",
+          "Rana_muscosa",
+          "Rana_temporaria",
+          "Ranitomeya_imitator",
+          "Rhinella_marina",
+          "Rhinophrynus_dorsalis",
+          "Spea_multiplicata",
+          "Xenopus_laevisL",
+          "Xenopus_laevisS",
+          "Xenopus_tropicalis"
+        ],
+        "bedGzLocation": {
+          "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/MAF/24Frogs.bed.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "https://bigfrog.xenbase.org/pub/xenbase/genomics/MAF/24Frogs.bed.gz.tbi"
+          }
+        }
+      },
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "FeatureTrack",
+      "category": ["Other"],
+      "trackId": "XT10_0_TFBS",
+      "metadata": {
+        "html": "<b>Source:</b> The putative transcription factor binding sites are identified by running fimo on<br>X. tropicalis 10.0 genome using motifs downloaded from <a href='http://cisbp.ccbr.utoronto.ca' target='_blank'>CIS-BP database</a>."
+      },
+      "name": "Transcription factor binding sites",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/Trop10_TFBS_All_v2.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/Trop10_TFBS_All_v2.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XT10.0"],
+      "displays": [
+        {
+          "type": "LinearArcDisplay",
+          "displayId": "XT10_0_TFBS-LinearArcDisplay"
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "GCF_human_hg38_prim",
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Human primary transcripts (hg38)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "synteny/lastz_sets/Human_XTR_PAF/hg38_GCF_CHRs_primTr.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "synteny/lastz_sets/Human_XTR_PAF/hg38_GCF_CHRs_primTr.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["HG38"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XENLA_10.1_Xenbase_sorted.gff3",
+      "category": ["Gene models"],
+      "formatDetails": {
+        "feature": "jexl:{dbxref:linkout(feature)}",
+        "subfeatures": "jexl:{dbxref:linkout(feature)}"
+      },
+      "name": "Xenopus laevis 10.1-Xenbase",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XL10_1_XB_long",
+      "category": ["Gene models"],
+      "name": "Xenopus laevis 10.1-Xenbase (longest)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_longest_sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xl10_1/XENLA_10.1_Xenbase_longest_sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "XT10_0_syn_long",
+      "name": "Xenopus tropicalis 10.0-Xenbase (longest)",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "../XenJBrowse/gene_models/xt10_0/XENTR_10.0_Xenbase_longest.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": ["XT10.0_masked"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "lastZ_XL10_1_LvsS",
+      "name": "X. laevis 10.1 L vs S",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "synteny/lastz_sets/XLAL_XLAS_PAF/XLAL_vs_XLAS_all_chrs.paf",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_L", "XL10.1_S"]
+      },
+      "assemblyNames": ["XL10.1_L", "XL10.1_S"]
+    }
+  ],
+  "plugins": [
+    {
+      "name": "DbxrefPlugin",
+      "umdLoc": {
+        "uri": "dbxrefPlugin.js"
+      }
+    },
+    {
+      "name": "MafViewer",
+      "url": "https://unpkg.com/jbrowse-plugin-mafviewer/dist/jbrowse-plugin-mafviewer.umd.production.min.js"
+    }
+  ],
+  "aggregateTextSearchAdapters": [
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "X. laevis 10.1 GCF (NCBI)-index",
+      "ixFilePath": {
+        "uri": "trix/X. laevis 10.1 GCF (NCBI).ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/X. laevis 10.1 GCF (NCBI).ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/X. laevis 10.1 GCF (NCBI)_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "X. tropicalis 10.0 GCF (NCBI)-index",
+      "ixFilePath": {
+        "uri": "trix/X. tropicalis 10.0 GCF (NCBI).ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/X. tropicalis 10.0 GCF (NCBI).ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/X. tropicalis 10.0 GCF (NCBI)_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XT10.0-index",
+      "ixFilePath": {
+        "uri": "trix/XT10.0.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XT10.0.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XT10.0_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XT10.0"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL10.1-index",
+      "ixFilePath": {
+        "uri": "trix/XL10.1.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL10.1.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL10.1_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL10.1"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL10.1_L-index",
+      "ixFilePath": {
+        "uri": "trix/XL10.1_L.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL10.1_L.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL10.1_L_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL10.1_L"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XT10.0_masked-index",
+      "ixFilePath": {
+        "uri": "trix/XT10.0_masked.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XT10.0_masked.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XT10.0_masked_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XT10.0_masked"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "HG38-index",
+      "ixFilePath": {
+        "uri": "trix/HG38.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/HG38.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/HG38_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["HG38"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL10.1_S-index",
+      "ixFilePath": {
+        "uri": "trix/XL10.1_S.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL10.1_S.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL10.1_S_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL10.1_S"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL9.1_L-index",
+      "ixFilePath": {
+        "uri": "trix/XL9.1_L.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL9.1_L.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL9.1_L_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL9.1_L"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL9.2_L-index",
+      "ixFilePath": {
+        "uri": "trix/XL9.2_L.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL9.2_L.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL9.2_L_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL9.2_L"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL9.1_S-index",
+      "ixFilePath": {
+        "uri": "trix/XL9.1_S.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL9.1_S.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL9.1_S_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL9.1_S"]
+    },
+    {
+      "type": "TrixTextSearchAdapter",
+      "textSearchAdapterId": "XL9.2_S-index",
+      "ixFilePath": {
+        "uri": "trix/XL9.2_S.ix",
+        "locationType": "UriLocation"
+      },
+      "ixxFilePath": {
+        "uri": "trix/XL9.2_S.ixx",
+        "locationType": "UriLocation"
+      },
+      "metaFilePath": {
+        "uri": "trix/XL9.2_S_meta.json",
+        "locationType": "UriLocation"
+      },
+      "assemblyNames": ["XL9.2_S"]
+    }
+  ],
+  "defaultSession": {
+    "drawerPosition": "left",
+    "drawerWidth": 384,
+    "widgets": {
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "collapsed": {},
+        "view": "rWjPJEFMQfpJ-k5xGy6F0",
+        "faceted": {
+          "filterText": "",
+          "showSparse": false,
+          "showFilters": true,
+          "showOptions": false,
+          "panelWidth": 400
+        }
+      },
+      "GridBookmark": {
+        "id": "GridBookmark",
+        "type": "GridBookmarkWidget"
+      }
+    },
+    "activeWidgets": {
+      "hierarchicalTrackSelector": "hierarchicalTrackSelector"
+    },
+    "minimized": false,
+    "id": "XZASs8NzyE",
+    "name": "Default Session",
+    "margin": 0,
+    "views": [
+      {
+        "id": "rWjPJEFMQfpJ-k5xGy6F0",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "offsetPx": 9588230,
+        "bpPerPx": 13.928809012737984,
+        "displayedRegions": [
+          {
+            "refName": "Chr3L",
+            "start": 0,
+            "end": 161426102,
+            "reversed": false,
+            "assemblyName": "XL10.1"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "xCMluiXChELeZu1M49jEB",
+            "type": "FeatureTrack",
+            "configuration": "XENLA_10.1_Xenbase_sorted.gff3",
+            "minimized": false,
+            "displays": [
+              {
+                "id": "A0kFLs1OoglbKwuF6sGB8",
+                "type": "LinearBasicDisplay",
+                "heightPreConfig": 300,
+                "configuration": "XENLA_10.1_Xenbase_sorted.gff3-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "hideNoTracksActive": false,
+        "trackSelectorType": "hierarchical",
+        "showCenterLine": false,
+        "showCytobandsSetting": true,
+        "trackLabels": "",
+        "showGridlines": true,
+        "showBookmarkHighlights": true,
+        "showBookmarkLabels": true
+      }
+    ],
+    "sessionTracks": [],
+    "sessionAssemblies": [],
+    "temporaryAssemblies": [],
+    "connectionInstances": [],
+    "sessionConnections": [],
+    "focusedViewId": "rWjPJEFMQfpJ-k5xGy6F0",
+    "sessionPlugins": []
+  }
+}
