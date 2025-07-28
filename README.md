@@ -2,7 +2,7 @@
 
 A plugin for the xenbase crew
 
-Sets up a ortholog in multi-way synteny view
+Sets up a multi-way synteny view to view orthologous genes across different genomes
 
 A general solution to this SHOULD get built into jbrowse, now that it is
 demonstrated here, maybe we can make some progress
