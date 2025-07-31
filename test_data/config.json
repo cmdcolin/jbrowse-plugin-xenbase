@@ -91,7 +91,6 @@
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "HG38-ReferenceSequenceTrack",
-
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
@@ -581,7 +580,7 @@
       "adapter": {
         "type": "PAFAdapter",
         "pafLocation": {
-          "uri": "synteny/lastz_sets/XTR_XLAL_PAF/XTR_XLAL_all_chrs.paf",
+          "uri": "synteny/lastz_sets/XTR_XLAL_PAF/XTR_XLAL_all_chrs.paf.gz",
           "locationType": "UriLocation"
         },
         "assemblyNames": ["XT10.0_masked", "XL10.1_L"]
@@ -717,7 +716,7 @@
       "adapter": {
         "type": "PAFAdapter",
         "pafLocation": {
-          "uri": "synteny/lastz_sets/Human_XTR_PAF/Human_XTR_lc_CHRs.paf",
+          "uri": "synteny/lastz_sets/Human_XTR_PAF/Human_XTR_lc_CHRs.paf.gz",
           "locationType": "UriLocation"
         },
         "assemblyNames": ["HG38", "XT10.0_masked"]
@@ -731,7 +730,7 @@
       "adapter": {
         "type": "PAFAdapter",
         "pafLocation": {
-          "uri": "synteny/lastz_sets/XTR_XLAS_PAF/XTR_XLAS_all_chrs.paf",
+          "uri": "synteny/lastz_sets/XTR_XLAS_PAF/XTR_XLAS_all_chrs.paf.gz",
           "locationType": "UriLocation"
         },
         "assemblyNames": ["XT10.0_masked", "XL10.1_S"]
@@ -762,7 +761,7 @@
       "adapter": {
         "type": "PAFAdapter",
         "pafLocation": {
-          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_xenLae_chrL_10_vs_9.1.paf",
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.1/Chr_xenLae_chrL_10_vs_9.1.paf.gz",
           "locationType": "UriLocation"
         },
         "assemblyNames": ["XL10.1_L", "XL9.1_L"]
@@ -817,7 +816,7 @@
       "adapter": {
         "type": "PAFAdapter",
         "pafLocation": {
-          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_xenLae_chrL_10_vs_9.2.paf",
+          "uri": "synteny/Chr_Synteny/v9_v10/XLA.L_9.2/Chr_xenLae_chrL_10_vs_9.2.paf.gz",
           "locationType": "UriLocation"
         },
         "assemblyNames": ["XL10.1_L", "XL9.2_L"]
@@ -1059,6 +1058,62 @@
         "assemblyNames": ["XL10.1_L", "XL10.1_S"]
       },
       "assemblyNames": ["XL10.1_L", "XL10.1_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "XTR_XLAL_all_chrs",
+      "name": "XTR_XLAL_all_chrs",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "XTR_XLAL_all_chrs.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XT10.0", "XL10.1_L"]
+      },
+      "assemblyNames": ["XT10.0", "XL10.1_L"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "XTR_XLAS_all_chrs",
+      "name": "XTR_XLAS_all_chrs",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "XTR_XLAS_all_chrs.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XT10.0", "XL10.1_S"]
+      },
+      "assemblyNames": ["XT10.0", "XL10.1_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "XLAL_vs_XLAS_all_chrs",
+      "name": "XLAL_vs_XLAS_all_chrs",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "XLAL_vs_XLAS_all_chrs.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["XL10.1_L", "XL10.1_S"]
+      },
+      "assemblyNames": ["XL10.1_L", "XL10.1_S"]
+    },
+    {
+      "type": "SyntenyTrack",
+      "trackId": "Human_vs_XTR_all_chrs",
+      "name": "Human_vs_XTR_all_chrs",
+      "adapter": {
+        "type": "PAFAdapter",
+        "pafLocation": {
+          "uri": "Human_vs_XTR_all_chrs.paf.gz",
+          "locationType": "UriLocation"
+        },
+        "assemblyNames": ["HG38", "XT10.0"]
+      },
+      "assemblyNames": ["HG38", "XT10.0"]
     }
   ],
   "plugins": [

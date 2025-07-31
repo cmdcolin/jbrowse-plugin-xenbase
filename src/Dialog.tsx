@@ -11,6 +11,19 @@ import {
 import { textfetch } from './util'
 import { dedupe } from '@jbrowse/core/util'
 
+function makeId(configuration: string) {
+  return {
+    type: 'SyntenyTrack',
+    configuration,
+    displays: [
+      {
+        type: 'LinearSyntenyDisplay',
+        configuration: `${configuration}-LinearSyntenyDisplay`,
+      },
+    ],
+  }
+}
+
 type COLS =
   | 'umbrella_gene'
   | 'XTR_XB-GENE'
@@ -222,6 +235,18 @@ export default function MyDialog({
             session.addView('LinearSyntenyView', {
               type: 'LinearSyntenyView',
               views: [
+                selectedValue?.HSA_coordinates
+                  ? {
+                      type: 'LinearGenomeView',
+                      hideHeader: true,
+                      init: {
+                        assembly: 'HG38',
+                        loc: selectedValue?.HSA_coordinates,
+                        tracks: ['GCF_human_hg38_prim'],
+                      },
+                    }
+                  : undefined,
+
                 selectedValue?.XTR_coordinates
                   ? {
                       type: 'LinearGenomeView',
@@ -255,28 +280,21 @@ export default function MyDialog({
                       },
                     }
                   : undefined,
-                {
-                  type: 'LinearGenomeView',
-                  hideHeader: true,
-                  init: {
-                    assembly: 'HG38',
-                    loc: selectedValue?.HSA_coordinates,
-                    tracks: ['GCF_human_hg38_prim'],
-                  },
-                },
               ].filter(f => !!f),
-              // tracks: [
-              //   {
-              //     configuration: trackId,
-              //     type: 'SyntenyTrack',
-              //     displays: [
-              //       {
-              //         type: 'LinearSyntenyDisplay',
-              //         configuration: `${trackId}-LinearSyntenyDisplay`,
-              //       },
-              //     ],
-              //   },
-              // ],
+              levels: [
+                {
+                  level: 0,
+                  tracks: [makeId('Human_vs_XTR_all_chrs')],
+                },
+                {
+                  level: 1,
+                  tracks: [makeId('XTR_XLAL_all_chrs')],
+                },
+                {
+                  level: 2,
+                  tracks: [makeId('XLAL_vs_XLAS_all_chrs')],
+                },
+              ],
             })
             handleClose()
           }}
